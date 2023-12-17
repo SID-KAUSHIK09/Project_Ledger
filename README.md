@@ -21,6 +21,8 @@ Constraints have been applied to project types and statuses:
 Testing for these functionalities is included in the `main_test.go` file.
 
 ## Sequence Diagram
+![Blank diagram (1)](https://github.com/SID-KAUSHIK09/Project_Ledger/assets/108971849/e3cca5b4-7b11-40e6-b18f-37adc282bef7)
+
 
 ## Getting Started
 
@@ -45,7 +47,7 @@ Follow these steps to run the code:
 ### Postman Requests
 
 - **GET:** `http://localhost:9000/project` - Retrieve all project details.
-- 
+  
 - **POST:** `http://localhost:9000/project` - Create a new project. Example JSON:
   ```json
   {
