@@ -45,6 +45,7 @@ Follow these steps to run the code:
 ### Postman Requests
 
 - **GET:** `http://localhost:9000/project` - Retrieve all project details.
+- 
 - **POST:** `http://localhost:9000/project` - Create a new project. Example JSON:
   ```json
   {
@@ -52,8 +53,10 @@ Follow these steps to run the code:
     "ptype": "ecommerce",
     "status": "inprocess"
   }
+  
 - **DELETE:** `http://localhost:9000/project/<project_id>` - Delete a project.
 Example:` http://localhost:9000/project/8`.
+
 - **PUT:** `http://localhost:9000/project/<project_id>` - Update a project.
 Example JSON:
 `{
@@ -61,6 +64,7 @@ Example JSON:
   "ptype": "ecommerce",
   "status": "completed"
 }`
+
 - **Postman Collection:** `https://drive.google.com/file/d/1S8b89qsJqYxraR6D0_mKxAbnwMok18l9/view?usp=drive_link`
 
 ## Testing
@@ -70,3 +74,8 @@ Run tests: `go test -v`.
 
 ## References
 `https://gofr.dev/docs`
+
+## Authors
+
+- [Siddharth Kaushik](https://github.com/SID-KAUSHIK09)
+
