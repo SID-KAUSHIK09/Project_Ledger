@@ -1,6 +1,6 @@
 # Zopsmart's Project Ledger
 
-Welcome to Zopsmart's Project Ledger, a CRUD API built in GoFr, an opinionated microservice development framework based on the Go language. This API is designed to manage projects at Zopsmart, handling project names, types, and status, providing essential CRUD operations.
+Zopsmart's Project Ledger is a CRUD API built in GoFr, an opinionated microservice development framework based on the Go language. This API is designed to manage projects at Zopsmart, handling project names, types, and status, providing essential CRUD operations.
 
 ## API Overview
 
@@ -18,7 +18,7 @@ Constraints have been applied to project types and statuses:
 - Project types: "ecommerce", "logistics", "retail", "supplychain", or "others".
 - Status: "inprocess" or "completed".
 
-Testing for these functionalities is included in the `main_test.go` file.
+Testing for CRUD functionalities is included in the `main_test.go` file.
 
 ## Sequence Diagram
 ![Blank diagram (1)](https://github.com/SID-KAUSHIK09/Project_Ledger/assets/108971849/e3cca5b4-7b11-40e6-b18f-37adc282bef7)
@@ -37,12 +37,13 @@ Follow these steps to run the code:
     ```bash
     docker run --name gofr-mysql -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=test_db -p 3306:3306 -d mysql:8.0.30
     ```
-7. Create the table in the database:
+7. Update .env file to as mentioned in code.
+8. Create the table in the database:
     ```bash
     docker exec -it gofr-mysql mysql -uroot -proot123 test_db -e "CREATE TABLE projects (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, ptype VARCHAR(255) NOT NULL, status VARCHAR(255) NOT NULL);"
     ```
-8. Run the server: `go run main.go`.
-9. Open Postman and use the following requests for CRUD operations.
+9. Run the server: `go run main.go`.
+10. Open Postman and use the following requests for CRUD operations.
 
 ### Postman Requests
 
